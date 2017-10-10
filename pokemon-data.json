@@ -1,0 +1,1361 @@
+[
+  {
+    "name": "Bulbasaur",
+    "pokemonAttackPower": "49",
+    "pokemonDefensePower": "49",
+    "pokemonHp": "45",
+    "pokemonId": "001",
+    "pokemonTotalStat": "318",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Ivysaur",
+    "pokemonAttackPower": "62",
+    "pokemonDefensePower": "63",
+    "pokemonHp": "60",
+    "pokemonId": "002",
+    "pokemonTotalStat": "405",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Venusaur",
+    "pokemonAttackPower": "82",
+    "pokemonDefensePower": "83",
+    "pokemonHp": "80",
+    "pokemonId": "003",
+    "pokemonTotalStat": "525",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Charmander",
+    "pokemonAttackPower": "52",
+    "pokemonDefensePower": "43",
+    "pokemonHp": "39",
+    "pokemonId": "004",
+    "pokemonTotalStat": "309",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Charmeleon",
+    "pokemonAttackPower": "64",
+    "pokemonDefensePower": "58",
+    "pokemonHp": "58",
+    "pokemonId": "005",
+    "pokemonTotalStat": "405",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Charizard",
+    "pokemonAttackPower": "84",
+    "pokemonDefensePower": "78",
+    "pokemonHp": "78",
+    "pokemonId": "006",
+    "pokemonTotalStat": "534",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Squirtle",
+    "pokemonAttackPower": "48",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "44",
+    "pokemonId": "007",
+    "pokemonTotalStat": "314",
+    "primaryType": "water"
+  },
+  {
+    "name": "Wartortle",
+    "pokemonAttackPower": "63",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "59",
+    "pokemonId": "008",
+    "pokemonTotalStat": "405",
+    "primaryType": "water"
+  },
+  {
+    "name": "Blastoise",
+    "pokemonAttackPower": "83",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "79",
+    "pokemonId": "009",
+    "pokemonTotalStat": "530",
+    "primaryType": "water"
+  },
+  {
+    "name": "Caterpie",
+    "pokemonAttackPower": "30",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "45",
+    "pokemonId": "010",
+    "pokemonTotalStat": "195",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Metapod",
+    "pokemonAttackPower": "20",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "50",
+    "pokemonId": "011",
+    "pokemonTotalStat": "205",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Butterfree",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "60",
+    "pokemonId": "012",
+    "pokemonTotalStat": "385",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Weedle",
+    "pokemonAttackPower": "35",
+    "pokemonDefensePower": "30",
+    "pokemonHp": "40",
+    "pokemonId": "013",
+    "pokemonTotalStat": "195",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Kakuna",
+    "pokemonAttackPower": "25",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "45",
+    "pokemonId": "014",
+    "pokemonTotalStat": "205",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Beedrill",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "40",
+    "pokemonHp": "65",
+    "pokemonId": "015",
+    "pokemonTotalStat": "385",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Pidgey",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "40",
+    "pokemonHp": "40",
+    "pokemonId": "016",
+    "pokemonTotalStat": "251",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Pidgeotto",
+    "pokemonAttackPower": "60",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "63",
+    "pokemonId": "017",
+    "pokemonTotalStat": "349",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Pidgeot",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "75",
+    "pokemonHp": "83",
+    "pokemonId": "018",
+    "pokemonTotalStat": "469",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Rattata",
+    "pokemonAttackPower": "56",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "30",
+    "pokemonId": "019",
+    "pokemonTotalStat": "253",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Raticate",
+    "pokemonAttackPower": "81",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "55",
+    "pokemonId": "020",
+    "pokemonTotalStat": "413",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Spearow",
+    "pokemonAttackPower": "60",
+    "pokemonDefensePower": "30",
+    "pokemonHp": "40",
+    "pokemonId": "021",
+    "pokemonTotalStat": "262",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Fearow",
+    "pokemonAttackPower": "90",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "65",
+    "pokemonId": "022",
+    "pokemonTotalStat": "442",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Ekans",
+    "pokemonAttackPower": "60",
+    "pokemonDefensePower": "44",
+    "pokemonHp": "35",
+    "pokemonId": "023",
+    "pokemonTotalStat": "288",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Arbok",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "69",
+    "pokemonHp": "60",
+    "pokemonId": "024",
+    "pokemonTotalStat": "438",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Pikachu",
+    "pokemonAttackPower": "55",
+    "pokemonDefensePower": "30",
+    "pokemonHp": "35",
+    "pokemonId": "025",
+    "pokemonTotalStat": "300",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Raichu",
+    "pokemonAttackPower": "90",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "60",
+    "pokemonId": "026",
+    "pokemonTotalStat": "475",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Sandshrew",
+    "pokemonAttackPower": "75",
+    "pokemonDefensePower": "85",
+    "pokemonHp": "50",
+    "pokemonId": "027",
+    "pokemonTotalStat": "300",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Sandslash",
+    "pokemonAttackPower": "100",
+    "pokemonDefensePower": "110",
+    "pokemonHp": "75",
+    "pokemonId": "028",
+    "pokemonTotalStat": "450",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Nidoran F",
+    "pokemonAttackPower": "47",
+    "pokemonDefensePower": "52",
+    "pokemonHp": "55",
+    "pokemonId": "029",
+    "pokemonTotalStat": "275",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Nidorina",
+    "pokemonAttackPower": "62",
+    "pokemonDefensePower": "67",
+    "pokemonHp": "70",
+    "pokemonId": "030",
+    "pokemonTotalStat": "365",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Nidoqueen",
+    "pokemonAttackPower": "82",
+    "pokemonDefensePower": "87",
+    "pokemonHp": "90",
+    "pokemonId": "031",
+    "pokemonTotalStat": "495",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Nidoran M",
+    "pokemonAttackPower": "57",
+    "pokemonDefensePower": "40",
+    "pokemonHp": "46",
+    "pokemonId": "032",
+    "pokemonTotalStat": "273",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Nidorino",
+    "pokemonAttackPower": "72",
+    "pokemonDefensePower": "57",
+    "pokemonHp": "61",
+    "pokemonId": "033",
+    "pokemonTotalStat": "365",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Nidoking",
+    "pokemonAttackPower": "92",
+    "pokemonDefensePower": "77",
+    "pokemonHp": "81",
+    "pokemonId": "034",
+    "pokemonTotalStat": "495",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Clefairy",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "48",
+    "pokemonHp": "70",
+    "pokemonId": "035",
+    "pokemonTotalStat": "323",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Clefable",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "73",
+    "pokemonHp": "95",
+    "pokemonId": "036",
+    "pokemonTotalStat": "473",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Vulpix",
+    "pokemonAttackPower": "41",
+    "pokemonDefensePower": "40",
+    "pokemonHp": "38",
+    "pokemonId": "037",
+    "pokemonTotalStat": "299",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Ninetales",
+    "pokemonAttackPower": "76",
+    "pokemonDefensePower": "75",
+    "pokemonHp": "73",
+    "pokemonId": "038",
+    "pokemonTotalStat": "505",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Jigglypuff",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "20",
+    "pokemonHp": "115",
+    "pokemonId": "039",
+    "pokemonTotalStat": "270",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Wigglytuff",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "140",
+    "pokemonId": "040",
+    "pokemonTotalStat": "425",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Zubat",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "40",
+    "pokemonId": "041",
+    "pokemonTotalStat": "245",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Golbat",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "75",
+    "pokemonId": "042",
+    "pokemonTotalStat": "455",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Oddish",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "45",
+    "pokemonId": "043",
+    "pokemonTotalStat": "320",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Gloom",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "60",
+    "pokemonId": "044",
+    "pokemonTotalStat": "395",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Vileplume",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "85",
+    "pokemonHp": "75",
+    "pokemonId": "045",
+    "pokemonTotalStat": "480",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Paras",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "35",
+    "pokemonId": "046",
+    "pokemonTotalStat": "285",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Parasect",
+    "pokemonAttackPower": "95",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "60",
+    "pokemonId": "047",
+    "pokemonTotalStat": "405",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Venonat",
+    "pokemonAttackPower": "55",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "60",
+    "pokemonId": "048",
+    "pokemonTotalStat": "305",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Venomoth",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "70",
+    "pokemonId": "049",
+    "pokemonTotalStat": "450",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Diglett",
+    "pokemonAttackPower": "55",
+    "pokemonDefensePower": "25",
+    "pokemonHp": "10",
+    "pokemonId": "050",
+    "pokemonTotalStat": "265",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Dugtrio",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "35",
+    "pokemonId": "051",
+    "pokemonTotalStat": "405",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Meowth",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "40",
+    "pokemonId": "052",
+    "pokemonTotalStat": "290",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Persian",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "65",
+    "pokemonId": "053",
+    "pokemonTotalStat": "440",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Psyduck",
+    "pokemonAttackPower": "52",
+    "pokemonDefensePower": "48",
+    "pokemonHp": "50",
+    "pokemonId": "054",
+    "pokemonTotalStat": "320",
+    "primaryType": "water"
+  },
+  {
+    "name": "Golduck",
+    "pokemonAttackPower": "82",
+    "pokemonDefensePower": "78",
+    "pokemonHp": "80",
+    "pokemonId": "055",
+    "pokemonTotalStat": "500",
+    "primaryType": "water"
+  },
+  {
+    "name": "Mankey",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "40",
+    "pokemonId": "056",
+    "pokemonTotalStat": "305",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Primeape",
+    "pokemonAttackPower": "105",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "65",
+    "pokemonId": "057",
+    "pokemonTotalStat": "455",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Growlithe",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "55",
+    "pokemonId": "058",
+    "pokemonTotalStat": "350",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Arcanine",
+    "pokemonAttackPower": "110",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "90",
+    "pokemonId": "059",
+    "pokemonTotalStat": "555",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Poliwag",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "40",
+    "pokemonHp": "40",
+    "pokemonId": "060",
+    "pokemonTotalStat": "300",
+    "primaryType": "water"
+  },
+  {
+    "name": "Poliwhirl",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "65",
+    "pokemonId": "061",
+    "pokemonTotalStat": "385",
+    "primaryType": "water"
+  },
+  {
+    "name": "Poliwrath",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "90",
+    "pokemonId": "062",
+    "pokemonTotalStat": "500",
+    "primaryType": "water"
+  },
+  {
+    "name": "Abra",
+    "pokemonAttackPower": "20",
+    "pokemonDefensePower": "15",
+    "pokemonHp": "25",
+    "pokemonId": "063",
+    "pokemonTotalStat": "310",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Kadabra",
+    "pokemonAttackPower": "35",
+    "pokemonDefensePower": "30",
+    "pokemonHp": "40",
+    "pokemonId": "064",
+    "pokemonTotalStat": "400",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Alakazam",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "55",
+    "pokemonId": "065",
+    "pokemonTotalStat": "490",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Machop",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "70",
+    "pokemonId": "066",
+    "pokemonTotalStat": "305",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Machoke",
+    "pokemonAttackPower": "100",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "80",
+    "pokemonId": "067",
+    "pokemonTotalStat": "405",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Machamp",
+    "pokemonAttackPower": "130",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "90",
+    "pokemonId": "068",
+    "pokemonTotalStat": "505",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Bellsprout",
+    "pokemonAttackPower": "75",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "50",
+    "pokemonId": "069",
+    "pokemonTotalStat": "300",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Weepinbell",
+    "pokemonAttackPower": "90",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "65",
+    "pokemonId": "070",
+    "pokemonTotalStat": "390",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Victreebel",
+    "pokemonAttackPower": "105",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "80",
+    "pokemonId": "071",
+    "pokemonTotalStat": "480",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Tentacool",
+    "pokemonAttackPower": "40",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "40",
+    "pokemonId": "072",
+    "pokemonTotalStat": "335",
+    "primaryType": "water"
+  },
+  {
+    "name": "Tentacruel",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "80",
+    "pokemonId": "073",
+    "pokemonTotalStat": "515",
+    "primaryType": "water"
+  },
+  {
+    "name": "Geodude",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "40",
+    "pokemonId": "074",
+    "pokemonTotalStat": "300",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Graveler",
+    "pokemonAttackPower": "95",
+    "pokemonDefensePower": "115",
+    "pokemonHp": "55",
+    "pokemonId": "075",
+    "pokemonTotalStat": "390",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Golem",
+    "pokemonAttackPower": "110",
+    "pokemonDefensePower": "130",
+    "pokemonHp": "80",
+    "pokemonId": "076",
+    "pokemonTotalStat": "485",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Ponyta",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "50",
+    "pokemonId": "077",
+    "pokemonTotalStat": "410",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Rapidash",
+    "pokemonAttackPower": "100",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "65",
+    "pokemonId": "078",
+    "pokemonTotalStat": "500",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Slowpoke",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "90",
+    "pokemonId": "079",
+    "pokemonTotalStat": "315",
+    "primaryType": "water"
+  },
+  {
+    "name": "Slowbro",
+    "pokemonAttackPower": "75",
+    "pokemonDefensePower": "110",
+    "pokemonHp": "95",
+    "pokemonId": "080",
+    "pokemonTotalStat": "490",
+    "primaryType": "water"
+  },
+  {
+    "name": "Magnemite",
+    "pokemonAttackPower": "35",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "25",
+    "pokemonId": "081",
+    "pokemonTotalStat": "325",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Magneton",
+    "pokemonAttackPower": "60",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "50",
+    "pokemonId": "082",
+    "pokemonTotalStat": "465",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Farfetch'd",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "52",
+    "pokemonId": "083",
+    "pokemonTotalStat": "352",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Doduo",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "35",
+    "pokemonId": "084",
+    "pokemonTotalStat": "310",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Dodrio",
+    "pokemonAttackPower": "110",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "60",
+    "pokemonId": "085",
+    "pokemonTotalStat": "460",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Seel",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "65",
+    "pokemonId": "086",
+    "pokemonTotalStat": "325",
+    "primaryType": "water"
+  },
+  {
+    "name": "Dewgong",
+    "pokemonAttackPower": "70",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "90",
+    "pokemonId": "087",
+    "pokemonTotalStat": "475",
+    "primaryType": "water"
+  },
+  {
+    "name": "Grimer",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "80",
+    "pokemonId": "088",
+    "pokemonTotalStat": "325",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Muk",
+    "pokemonAttackPower": "105",
+    "pokemonDefensePower": "75",
+    "pokemonHp": "105",
+    "pokemonId": "089",
+    "pokemonTotalStat": "500",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Shellder",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "30",
+    "pokemonId": "090",
+    "pokemonTotalStat": "305",
+    "primaryType": "water"
+  },
+  {
+    "name": "Cloyster",
+    "pokemonAttackPower": "95",
+    "pokemonDefensePower": "180",
+    "pokemonHp": "50",
+    "pokemonId": "091",
+    "pokemonTotalStat": "525",
+    "primaryType": "water"
+  },
+  {
+    "name": "Gastly",
+    "pokemonAttackPower": "35",
+    "pokemonDefensePower": "30",
+    "pokemonHp": "30",
+    "pokemonId": "092",
+    "pokemonTotalStat": "310",
+    "primaryType": "ghost"
+  },
+  {
+    "name": "Haunter",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "45",
+    "pokemonId": "093",
+    "pokemonTotalStat": "405",
+    "primaryType": "ghost"
+  },
+  {
+    "name": "Gengar",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "60",
+    "pokemonId": "094",
+    "pokemonTotalStat": "500",
+    "primaryType": "ghost"
+  },
+  {
+    "name": "Onix",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "160",
+    "pokemonHp": "35",
+    "pokemonId": "095",
+    "pokemonTotalStat": "385",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Drowzee",
+    "pokemonAttackPower": "48",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "60",
+    "pokemonId": "096",
+    "pokemonTotalStat": "328",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Hypno",
+    "pokemonAttackPower": "73",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "85",
+    "pokemonId": "097",
+    "pokemonTotalStat": "483",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Krabby",
+    "pokemonAttackPower": "105",
+    "pokemonDefensePower": "90",
+    "pokemonHp": "30",
+    "pokemonId": "098",
+    "pokemonTotalStat": "325",
+    "primaryType": "water"
+  },
+  {
+    "name": "Kingler",
+    "pokemonAttackPower": "130",
+    "pokemonDefensePower": "115",
+    "pokemonHp": "55",
+    "pokemonId": "099",
+    "pokemonTotalStat": "475",
+    "primaryType": "water"
+  },
+  {
+    "name": "Voltorb",
+    "pokemonAttackPower": "30",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "40",
+    "pokemonId": "100",
+    "pokemonTotalStat": "330",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Electrode",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "60",
+    "pokemonId": "101",
+    "pokemonTotalStat": "480",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Exeggcute",
+    "pokemonAttackPower": "40",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "60",
+    "pokemonId": "102",
+    "pokemonTotalStat": "325",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Exeggutor",
+    "pokemonAttackPower": "95",
+    "pokemonDefensePower": "85",
+    "pokemonHp": "95",
+    "pokemonId": "103",
+    "pokemonTotalStat": "520",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Cubone",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "50",
+    "pokemonId": "104",
+    "pokemonTotalStat": "320",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Marowak",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "110",
+    "pokemonHp": "60",
+    "pokemonId": "105",
+    "pokemonTotalStat": "425",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Hitmonlee",
+    "pokemonAttackPower": "120",
+    "pokemonDefensePower": "53",
+    "pokemonHp": "50",
+    "pokemonId": "106",
+    "pokemonTotalStat": "455",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Hitmonchan",
+    "pokemonAttackPower": "105",
+    "pokemonDefensePower": "79",
+    "pokemonHp": "50",
+    "pokemonId": "107",
+    "pokemonTotalStat": "455",
+    "primaryType": "fighting"
+  },
+  {
+    "name": "Lickitung",
+    "pokemonAttackPower": "55",
+    "pokemonDefensePower": "75",
+    "pokemonHp": "90",
+    "pokemonId": "108",
+    "pokemonTotalStat": "385",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Koffing",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "40",
+    "pokemonId": "109",
+    "pokemonTotalStat": "340",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Weezing",
+    "pokemonAttackPower": "90",
+    "pokemonDefensePower": "120",
+    "pokemonHp": "65",
+    "pokemonId": "110",
+    "pokemonTotalStat": "490",
+    "primaryType": "poison"
+  },
+  {
+    "name": "Rhyhorn",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "80",
+    "pokemonId": "111",
+    "pokemonTotalStat": "345",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Rhydon",
+    "pokemonAttackPower": "130",
+    "pokemonDefensePower": "120",
+    "pokemonHp": "105",
+    "pokemonId": "112",
+    "pokemonTotalStat": "485",
+    "primaryType": "ground"
+  },
+  {
+    "name": "Chansey",
+    "pokemonAttackPower": "5",
+    "pokemonDefensePower": "5",
+    "pokemonHp": "250",
+    "pokemonId": "113",
+    "pokemonTotalStat": "450",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Tangela",
+    "pokemonAttackPower": "55",
+    "pokemonDefensePower": "115",
+    "pokemonHp": "65",
+    "pokemonId": "114",
+    "pokemonTotalStat": "435",
+    "primaryType": "grass"
+  },
+  {
+    "name": "Kangaskhan",
+    "pokemonAttackPower": "95",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "105",
+    "pokemonId": "115",
+    "pokemonTotalStat": "490",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Horsea",
+    "pokemonAttackPower": "40",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "30",
+    "pokemonId": "116",
+    "pokemonTotalStat": "295",
+    "primaryType": "water"
+  },
+  {
+    "name": "Seadra",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "55",
+    "pokemonId": "117",
+    "pokemonTotalStat": "440",
+    "primaryType": "water"
+  },
+  {
+    "name": "Goldeen",
+    "pokemonAttackPower": "67",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "45",
+    "pokemonId": "118",
+    "pokemonTotalStat": "320",
+    "primaryType": "water"
+  },
+  {
+    "name": "Seaking",
+    "pokemonAttackPower": "92",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "80",
+    "pokemonId": "119",
+    "pokemonTotalStat": "450",
+    "primaryType": "water"
+  },
+  {
+    "name": "Staryu",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "30",
+    "pokemonId": "120",
+    "pokemonTotalStat": "340",
+    "primaryType": "water"
+  },
+  {
+    "name": "Starmie",
+    "pokemonAttackPower": "75",
+    "pokemonDefensePower": "85",
+    "pokemonHp": "60",
+    "pokemonId": "121",
+    "pokemonTotalStat": "520",
+    "primaryType": "water"
+  },
+  {
+    "name": "Mr. Mime",
+    "pokemonAttackPower": "45",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "40",
+    "pokemonId": "122",
+    "pokemonTotalStat": "460",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Scyther",
+    "pokemonAttackPower": "110",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "70",
+    "pokemonId": "123",
+    "pokemonTotalStat": "500",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Jynx",
+    "pokemonAttackPower": "50",
+    "pokemonDefensePower": "35",
+    "pokemonHp": "65",
+    "pokemonId": "124",
+    "pokemonTotalStat": "455",
+    "primaryType": "ice"
+  },
+  {
+    "name": "Electabuzz",
+    "pokemonAttackPower": "83",
+    "pokemonDefensePower": "57",
+    "pokemonHp": "65",
+    "pokemonId": "125",
+    "pokemonTotalStat": "490",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Magmar",
+    "pokemonAttackPower": "95",
+    "pokemonDefensePower": "57",
+    "pokemonHp": "65",
+    "pokemonId": "126",
+    "pokemonTotalStat": "495",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Pinsir",
+    "pokemonAttackPower": "125",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "65",
+    "pokemonId": "127",
+    "pokemonTotalStat": "500",
+    "primaryType": "bug"
+  },
+  {
+    "name": "Tauros",
+    "pokemonAttackPower": "100",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "75",
+    "pokemonId": "128",
+    "pokemonTotalStat": "490",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Magikarp",
+    "pokemonAttackPower": "10",
+    "pokemonDefensePower": "55",
+    "pokemonHp": "20",
+    "pokemonId": "129",
+    "pokemonTotalStat": "200",
+    "primaryType": "water"
+  },
+  {
+    "name": "Gyarados",
+    "pokemonAttackPower": "125",
+    "pokemonDefensePower": "79",
+    "pokemonHp": "95",
+    "pokemonId": "130",
+    "pokemonTotalStat": "540",
+    "primaryType": "water"
+  },
+  {
+    "name": "Lapras",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "80",
+    "pokemonHp": "130",
+    "pokemonId": "131",
+    "pokemonTotalStat": "535",
+    "primaryType": "water"
+  },
+  {
+    "name": "Ditto",
+    "pokemonAttackPower": "48",
+    "pokemonDefensePower": "48",
+    "pokemonHp": "48",
+    "pokemonId": "132",
+    "pokemonTotalStat": "288",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Eevee",
+    "pokemonAttackPower": "55",
+    "pokemonDefensePower": "50",
+    "pokemonHp": "55",
+    "pokemonId": "133",
+    "pokemonTotalStat": "325",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Vaporeon",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "130",
+    "pokemonId": "134",
+    "pokemonTotalStat": "525",
+    "primaryType": "water"
+  },
+  {
+    "name": "Jolteon",
+    "pokemonAttackPower": "65",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "65",
+    "pokemonId": "135",
+    "pokemonTotalStat": "525",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Flareon",
+    "pokemonAttackPower": "130",
+    "pokemonDefensePower": "60",
+    "pokemonHp": "65",
+    "pokemonId": "136",
+    "pokemonTotalStat": "525",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Porygon",
+    "pokemonAttackPower": "60",
+    "pokemonDefensePower": "70",
+    "pokemonHp": "65",
+    "pokemonId": "137",
+    "pokemonTotalStat": "395",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Omanyte",
+    "pokemonAttackPower": "40",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "35",
+    "pokemonId": "138",
+    "pokemonTotalStat": "355",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Omastar",
+    "pokemonAttackPower": "60",
+    "pokemonDefensePower": "125",
+    "pokemonHp": "70",
+    "pokemonId": "139",
+    "pokemonTotalStat": "495",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Kabuto",
+    "pokemonAttackPower": "80",
+    "pokemonDefensePower": "90",
+    "pokemonHp": "30",
+    "pokemonId": "140",
+    "pokemonTotalStat": "355",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Kabutops",
+    "pokemonAttackPower": "115",
+    "pokemonDefensePower": "105",
+    "pokemonHp": "60",
+    "pokemonId": "141",
+    "pokemonTotalStat": "495",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Aerodactyl",
+    "pokemonAttackPower": "105",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "80",
+    "pokemonId": "142",
+    "pokemonTotalStat": "515",
+    "primaryType": "rock"
+  },
+  {
+    "name": "Snorlax",
+    "pokemonAttackPower": "110",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "160",
+    "pokemonId": "143",
+    "pokemonTotalStat": "540",
+    "primaryType": "normal"
+  },
+  {
+    "name": "Articuno",
+    "pokemonAttackPower": "85",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "90",
+    "pokemonId": "144",
+    "pokemonTotalStat": "580",
+    "primaryType": "ice"
+  },
+  {
+    "name": "Zapdos",
+    "pokemonAttackPower": "90",
+    "pokemonDefensePower": "85",
+    "pokemonHp": "90",
+    "pokemonId": "145",
+    "pokemonTotalStat": "580",
+    "primaryType": "electric"
+  },
+  {
+    "name": "Moltres",
+    "pokemonAttackPower": "100",
+    "pokemonDefensePower": "90",
+    "pokemonHp": "90",
+    "pokemonId": "146",
+    "pokemonTotalStat": "580",
+    "primaryType": "fire"
+  },
+  {
+    "name": "Dratini",
+    "pokemonAttackPower": "64",
+    "pokemonDefensePower": "45",
+    "pokemonHp": "41",
+    "pokemonId": "147",
+    "pokemonTotalStat": "300",
+    "primaryType": "dragon"
+  },
+  {
+    "name": "Dragonair",
+    "pokemonAttackPower": "84",
+    "pokemonDefensePower": "65",
+    "pokemonHp": "61",
+    "pokemonId": "148",
+    "pokemonTotalStat": "420",
+    "primaryType": "dragon"
+  },
+  {
+    "name": "Dragonite",
+    "pokemonAttackPower": "134",
+    "pokemonDefensePower": "95",
+    "pokemonHp": "91",
+    "pokemonId": "149",
+    "pokemonTotalStat": "600",
+    "primaryType": "dragon"
+  },
+  {
+    "name": "Mewtwo",
+    "pokemonAttackPower": "110",
+    "pokemonDefensePower": "90",
+    "pokemonHp": "106",
+    "pokemonId": "150",
+    "pokemonTotalStat": "680",
+    "primaryType": "psychic"
+  },
+  {
+    "name": "Mew",
+    "pokemonAttackPower": "100",
+    "pokemonDefensePower": "100",
+    "pokemonHp": "100",
+    "pokemonId": "151",
+    "pokemonTotalStat": "600",
+    "primaryType": "psychic"
+  }
+]
