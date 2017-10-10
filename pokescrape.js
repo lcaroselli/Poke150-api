@@ -11,14 +11,14 @@ nightmare
 
     for (let i = 0; i < pokeNodes.length; i++) {
       let name = pokeNodes[i].querySelector('.rowLink').innerText;
-      let pokemonId = pokeNodes[i].querySelectorAll('td')[1].innerText;
+      let id = pokeNodes[i].querySelectorAll('td')[1].innerText;
       let primaryType = pokeNodes[i].querySelectorAll('td')[3].getAttribute('class');
       let pokemonHp = pokeNodes[i].querySelectorAll('td')[5].innerText;
       let pokemonAttackPower = pokeNodes[i].querySelectorAll('td')[6].innerText;
       let pokemonDefensePower = pokeNodes[i].querySelectorAll('td')[7].innerText;
       let pokemonTotalStat = pokeNodes[i].querySelectorAll('td')[11].innerText;
 
-      pokeInfo.push({ name, pokemonId, primaryType, pokemonHp, pokemonAttackPower, pokemonDefensePower, pokemonTotalStat });
+      pokeInfo.push({ name, id, primaryType, pokemonHp, pokemonAttackPower, pokemonDefensePower, pokemonTotalStat });
     }
 
     return pokeInfo
