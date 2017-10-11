@@ -1,7 +1,6 @@
 {
   "name": "poke150-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +17,11 @@
   },
   "homepage": "https://github.com/lcaroselli/Poke150-api#readme",
   "dependencies": {
-    "nightmare": "^2.10.0"
-  }
+    "eslint": "^4.8.0",
+    "knex": "^0.13.0",
+    "nightmare": "^2.10.0",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {},
+  "description": ""
 }
