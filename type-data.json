@@ -1,0 +1,44 @@
+[
+  {
+    "type_label": "grass"
+  },
+  {
+    "type_label": "fire"
+  },
+  {
+    "type_label": "water"
+  },
+  {
+    "type_label": "bug"
+  },
+  {
+    "type_label": "normal"
+  },
+  {
+    "type_label": "poison"
+  },
+  {
+    "type_label": "electric"
+  },
+  {
+    "type_label": "ground"
+  },
+  {
+    "type_label": "fighting"
+  },
+  {
+    "type_label": "psychic"
+  },
+  {
+    "type_label": "rock"
+  },
+  {
+    "type_label": "ghost"
+  },
+  {
+    "type_label": "ice"
+  },
+  {
+    "type_label": "dragon"
+  }
+]
