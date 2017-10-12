@@ -47,6 +47,7 @@ app.get('/api/v1/types', (request, response) => {
   .catch(error => { response.status(500).json({ error }) })
 });
 
+
   //GET Pokemon by region id
 app.get('/api/v1/pokemon/:region_id', (request, response) => {
   const { region_id } = request.params;
@@ -72,6 +73,7 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
 //     response.status(500).json({ error })
 //   })
 // });
+
 
 //POST Endpoints
 
