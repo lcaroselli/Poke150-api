@@ -35,26 +35,42 @@ app.get('/api/v1/pokemon', (request, response) => {
 
 
   //GET all types
-// app.get('api/v1/pokemon?type=grass', (request, response) => {
-//   database('types').select()
-//   .then(type => {
-//     if (!type.length) {
-//       return response.status(404).json({ error: 'No type found' })
-//     }
-//     response.status(200).json(type)
-//   })
-//
-//   .catch(error => { response.status(500).json({ error }) })
-// });
+app.get('/api/v1/types', (request, response) => {
+  database('types').select()
+  .then(types => {
+    if (!types.length) {
+      return response.status(404).json({ error: 'No pokemon types found' })
+    }
+    response.status(200).json(types)
+  })
+
+  .catch(error => { response.status(500).json({ error }) })
+});
 
   //GET Pokemon by region id
-// app.get('/api/v1/pokemon/:id', (request, response) => {
-//   response.send('PokeID');
-// });
+app.get('/api/v1/pokemon/:region_id', (request, response) => {
+  const { region_id } = request.params;
+
+  database('pokemon').where({ region_id }).select()
+  .then(region => {
+    response.status(200).json(region)
+  })
+  .catch(error => {
+    response.status(500).json({ error })
+  })
+});
 
   //GET  Pokemon by name
 // app.get('/api/v1/pokemon/:name', (request, response) => {
-//   response.send('PokeName');
+//   const { name } = request.params;
+//
+//   database('pokemon').where({ name }).select()
+//   .then(name => {
+//     response.status(200).json(name)
+//   })
+//   .catch(error => {
+//     response.status(500).json({ error })
+//   })
 // });
 
 //POST Endpoints
