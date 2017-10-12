@@ -38,7 +38,7 @@ const checkAuth = (request, response, next) => {
     }
       next();
   })
-}
+};
 
 const checkToken = (request, response, next) => {
   const token = request.body.token;
@@ -53,7 +53,8 @@ const checkToken = (request, response, next) => {
     }
       next();
   })
-}
+};
+
 
 
 //GET Endpoints
@@ -117,5 +118,35 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
 //PUT/PATCH Endpoints
 
 //DELETE Endpoints
+  //DELETE by pokemon region id
+app.delete('/api/v1/pokemon/:region_id', (request, response) => {
+  const { region_id } = request.params;
+
+  database('pokemon').where({ region_id }).del()
+
+  .then(response => {
+    if(!response) {
+      response.status(404).json({ error: 'Pokemon matching region id not found' })
+    }
+    response.sendStatus(204)
+  })
+  .catch( error => response.status(500).json({ error }) );
+});
+
+
+  //DELETE types
+// app.delete('/api/v1/types/:type_label', (request, response) => {
+//   const { type_label } = request.params;
+//
+//   database('types').where({ type_label }).del()
+//
+//   .then(response => {
+//     if(!response) {
+//       response.status(404).json({ error: 'Type matching label not found' })
+//     }
+//     response.sendStatus(204)
+//    })
+//   .catch( error => response.status(500).json({ error }) );
+// });
 
 module.exports = app;
