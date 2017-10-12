@@ -8,10 +8,15 @@ const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
 
+require('dotenv').config()
+const secretKey = process.env.secretKey;
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.set('secretKey', secretKey);
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Poke150 API';
 
@@ -127,7 +132,26 @@ app.get('/api/v1/types/:id', (request, response) => {
 
 
 //POST Endpoints
-  //POST for authentication !!!!!
+  //POST for authentication
+app.post('/api/v1/authenticate', (request, response) => {
+  const { email, appName } = request.body;
+
+  if(!email || !appName) {
+    return response.status(422).json({ error: 'Cannot authenticate: Email and App name are required' })
+  }
+
+  if(email.includes('turing.io')) {
+    Object.assign(request.body, { admin: true })
+  } else {
+    Object.assign(request.body, { admin: false })
+  }
+
+  let jwtToken = jwt.sign(request.body, app.get('secretKey'), { expiresIn: '48h' })
+
+  return response.status(201).json(jwtToken)
+
+  .catch(error => response.status(500).json({ error }))
+});
 
   //POST new type
 app.post('/api/v1/types', checkAuth, (request, response) => {
@@ -203,7 +227,7 @@ app.put('/api/v1/types/:id', checkAuth, (request, response) => {
 
 //DELETE Endpoints
   //DELETE by pokemon region id
-app.delete('/api/v1/pokemon/:region_id', (request, response) => {
+app.delete('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
   const { region_id } = request.params;
 
   database('pokemon').where({ region_id }).del()
@@ -218,7 +242,7 @@ app.delete('/api/v1/pokemon/:region_id', (request, response) => {
 });
 
   //DELETE by pokemon id
-app.delete('/api/v1/pokemon/id/:id', (request, response) => {
+app.delete('/api/v1/pokemon/id/:id', checkAuth, (request, response) => {
   const { id } = request.params;
 
   database('pokemon').where({ id }).del()
