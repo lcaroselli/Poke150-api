@@ -61,6 +61,7 @@ const checkToken = (request, response, next) => {
   //GET all pokemon
 app.get('/api/v1/pokemon', (request, response) => {
   database('pokemon').select()
+
   .then(pokemon => {
     if (!pokemon.length) {
       return response.status(404).json({ error: 'No pokemon found' })
@@ -71,10 +72,10 @@ app.get('/api/v1/pokemon', (request, response) => {
   .catch(error => { response.status(500).json({ error }) })
 });
 
-
   //GET all types
 app.get('/api/v1/types', (request, response) => {
   database('types').select()
+
   .then(types => {
     if (!types.length) {
       return response.status(404).json({ error: 'No pokemon types found' })
@@ -85,15 +86,16 @@ app.get('/api/v1/types', (request, response) => {
   .catch(error => { response.status(500).json({ error }) })
 });
 
-
   //GET Pokemon by region id
 app.get('/api/v1/pokemon/:region_id', (request, response) => {
   const { region_id } = request.params;
 
   database('pokemon').where({ region_id }).select()
+
   .then(region => {
     response.status(200).json(region)
   })
+
   .catch(error => {
     response.status(500).json({ error })
   })
@@ -113,9 +115,43 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
 // });
 
 
+
 //POST Endpoints
+  //POST new type
+app.post('/api/v1/types', (request, response) => {
+  const { type_label } = request.body;
+
+  if(!type_label) {
+    return response.status(422).json({ error: 'Missing required property: type label' })
+  }
+
+  database('types').insert({ type_label }, '*')
+
+  .then(type => response.status(201).json(type))
+
+  .catch(error => response.status(500).json({ error }))
+});
+
+  //POST new pokemon
+// app.post('/api/v1/types', (request, response) => {
+//   const { type_label } = request.body;
+//
+//   if(!type_label) {
+//     return response.status(422).json({ error: 'Missing required property: type label' })
+//   }
+//
+//   database('types').insert({ type_label }, '*')
+
+//   .then(type => response.status(201).json(type))
+
+//   .catch(error => response.status(500).json({ error }))
+// });
+
+
 
 //PUT/PATCH Endpoints
+
+
 
 //DELETE Endpoints
   //DELETE by pokemon region id
@@ -133,7 +169,6 @@ app.delete('/api/v1/pokemon/:region_id', (request, response) => {
   .catch( error => response.status(500).json({ error }) );
 });
 
-
   //DELETE types
 // app.delete('/api/v1/types/:type_label', (request, response) => {
 //   const { type_label } = request.params;
@@ -146,6 +181,7 @@ app.delete('/api/v1/pokemon/:region_id', (request, response) => {
 //     }
 //     response.sendStatus(204)
 //    })
+
 //   .catch( error => response.status(500).json({ error }) );
 // });
 
