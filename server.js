@@ -140,7 +140,7 @@ app.post('/api/v1/pokemon', (request, response) => {
     [ 'region_id', 'name', 'attack_power', 'defense_power', 'hp', 'power_total', 'type_id', 'primary_type' ]) {
 
       if (!newPokemon[pokeParameters]) {
-        return response.status(422).send({ error: `Expected parameters: { region_id: <String>, name: <String>, attack_power: <String>, defense_power: <String>, hp: <String>, power_total: <String>, type_id: <Integer>, primary_type: <String> }. You're missing a ${requiredParameter}.` });
+        return response.status(422).send({ error: `Expected parameters: { region_id: <String>, name: <String>, attack_power: <String>, defense_power: <String>, hp: <String>, power_total: <String>, type_id: <Integer>, primary_type: <String> }. You're missing a ${pokeParameters}.` });
       }
   }
 
@@ -152,7 +152,37 @@ app.post('/api/v1/pokemon', (request, response) => {
 });
 
 
-//PUT/PATCH Endpoints
+//PATCH/PUT Endpoints
+app.patch('/api/v1/pokemon/:region_id', (request, response) => {
+  const { region_id } = request.params;
+  const { name, attack_power, defense_power, hp, power_total, type_id, primary_type } = request.body;
+
+  //error handling -- correct status code for patch?
+
+  database('pokemon').where({ region_id })
+
+  .update({ name, attack_power, defense_power, hp, power_total, type_id, primary_type }, '*')
+
+  .then(patchedPokemon => response.status(200).json(patchedPokemon))
+
+  .catch(error => response.status(500).json({ error }));
+});
+
+
+app.put('/api/v1/types/:id', (request, response) => {
+  const { id } = request.params;
+  const { type_label } = request.body;
+
+  //error handling -- correct status code for put?
+
+  database('types').where({ id })
+
+  .update({ type_label }, '*')
+
+  .then(putType => response.status(200).json(putType))
+
+  .catch(error => response.status(500).json({ error }));
+});
 
 
 
