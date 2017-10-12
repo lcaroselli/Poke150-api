@@ -62,6 +62,8 @@ const checkToken = (request, response, next) => {
 app.get('/api/v1/pokemon', (request, response) => {
   database('pokemon').select()
 
+  //query params - express how to access query params
+
   .then(pokemon => {
     if (!pokemon.length) {
       return response.status(404).json({ error: 'No pokemon found' })
@@ -104,23 +106,23 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
   })
 });
 
-  //GET  Pokemon by name
-// app.get('/api/v1/pokemon/:name', (request, response) => {
-//   const { name } = request.params;
+  //GET type by id
+app.get('/api/v1/types/:id', (request, response) => {
+  const { id } = request.params;
 
-//   database('pokemon').where({ name }).select()
+  database('types').where({ id }).select()
 
-//   .then(name => {
-//    if (!name.length) {
-//     return response.status(404).json({ error: 'No pokemon with that name found' })
-//    }
-//    response.status(200).json(name)
-//  })
+  .then(id => {
+   if (!id.length) {
+    return response.status(404).json({ error: 'No type with that id found' })
+   }
+   response.status(200).json(id)
+ })
 
-//   .catch(error => {
-//     response.status(500).json({ error })
-//   })
-// });
+  .catch(error => {
+    response.status(500).json({ error })
+  })
+});
 
 
 
@@ -180,7 +182,6 @@ app.patch('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
   .catch(error => response.status(500).json({ error }));
 });
 
-
 app.put('/api/v1/types/:id', checkAuth, (request, response) => {
   const { id } = request.params;
   const { type_label } = request.body;
@@ -202,7 +203,7 @@ app.put('/api/v1/types/:id', checkAuth, (request, response) => {
 
 //DELETE Endpoints
   //DELETE by pokemon region id
-app.delete('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
+app.delete('/api/v1/pokemon/:region_id', (request, response) => {
   const { region_id } = request.params;
 
   database('pokemon').where({ region_id }).del()
@@ -216,43 +217,19 @@ app.delete('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
   .catch( error => response.status(500).json({ error }) );
 });
 
+  //DELETE by pokemon id
+app.delete('/api/v1/pokemon/id/:id', (request, response) => {
+  const { id } = request.params;
 
+  database('pokemon').where({ id }).del()
 
-  //DELETE by pokemon name
-// app.delete('/api/v1/pokemon/:name', (request, response) => {
-//   console.log(request.params)
-//
-//   const { name } = request.params;
-//
-//   console.log(name)
-//
-//   database('pokemon').where({ name }).del()
-//
-//   .then(response => {
-//     if(!response) {
-//       response.status(404).json({ error: 'Pokemon matching name not found' })
-//     }
-//     response.sendStatus(204)
-//   })
-//   .catch( error => response.status(500).json({ error }) );
-// });
-
-
-
-  //DELETE types
-// app.delete('/api/v1/types/:type_label', (request, response) => {
-//   const { type_label, id } = request.params;
-//
-//   database('pokemon').where({ type_id: id }).del()
-//   database('types').where({ type_label }).del()
-//
-//   .then(response => {
-//     if(!response) {
-//       response.status(404).json({ error: 'Not...' })
-//     }
-//     response.sendStatus(204)
-//   })
-// })
-
+  .then(response => {
+    if(!response) {
+      response.status(404).json({ error: 'Pokemon matching id not found' })
+    }
+    response.sendStatus(204)
+  })
+  .catch( error => response.status(500).json({ error }) );
+});
 
 module.exports = app;
