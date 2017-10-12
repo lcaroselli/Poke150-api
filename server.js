@@ -93,6 +93,9 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
   database('pokemon').where({ region_id }).select()
 
   .then(region => {
+    if (!region.length) {
+      return response.status(404).json({ error: 'No pokemon with that region id found' })
+    }
     response.status(200).json(region)
   })
 
@@ -104,11 +107,16 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
   //GET  Pokemon by name
 // app.get('/api/v1/pokemon/:name', (request, response) => {
 //   const { name } = request.params;
-//
+
 //   database('pokemon').where({ name }).select()
+
 //   .then(name => {
-//     response.status(200).json(name)
-//   })
+//    if (!name.length) {
+//     return response.status(404).json({ error: 'No pokemon with that name found' })
+//    }
+//    response.status(200).json(name)
+//  })
+
 //   .catch(error => {
 //     response.status(500).json({ error })
 //   })
@@ -117,6 +125,8 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
 
 
 //POST Endpoints
+  //POST for authentication !!!!!
+
   //POST new type
 app.post('/api/v1/types', checkAuth, (request, response) => {
   const { type_label } = request.body;
@@ -157,7 +167,9 @@ app.patch('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
   const { region_id } = request.params;
   const { name, attack_power, defense_power, hp, power_total, type_id, primary_type } = request.body;
 
-  //error handling -- correct status code for patch?
+  if (!name && !attack_power && !defense_power && !hp && !power_total && !type_id && !primary_type) {
+    return response.status(422).send({ error: "Partial update failed, missing a parameter" })
+  }
 
   database('pokemon').where({ region_id })
 
@@ -173,7 +185,9 @@ app.put('/api/v1/types/:id', checkAuth, (request, response) => {
   const { id } = request.params;
   const { type_label } = request.body;
 
-  //error handling -- correct status code for put?
+  if (!type_label) {
+    return response.status(422).send({ error: "Update failed" })
+  }
 
   database('types').where({ id })
 
