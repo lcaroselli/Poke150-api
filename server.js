@@ -118,7 +118,7 @@ app.get('/api/v1/pokemon/:region_id', (request, response) => {
 
 //POST Endpoints
   //POST new type
-app.post('/api/v1/types', (request, response) => {
+app.post('/api/v1/types', checkAuth, (request, response) => {
   const { type_label } = request.body;
 
   if(!type_label) {
@@ -133,7 +133,7 @@ app.post('/api/v1/types', (request, response) => {
 });
 
   //POST new pokemon
-app.post('/api/v1/pokemon', (request, response) => {
+app.post('/api/v1/pokemon', checkAuth, (request, response) => {
   const newPokemon = request.body;
 
   for (let pokeParameters of
@@ -153,7 +153,7 @@ app.post('/api/v1/pokemon', (request, response) => {
 
 
 //PATCH/PUT Endpoints
-app.patch('/api/v1/pokemon/:region_id', (request, response) => {
+app.patch('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
   const { region_id } = request.params;
   const { name, attack_power, defense_power, hp, power_total, type_id, primary_type } = request.body;
 
@@ -169,7 +169,7 @@ app.patch('/api/v1/pokemon/:region_id', (request, response) => {
 });
 
 
-app.put('/api/v1/types/:id', (request, response) => {
+app.put('/api/v1/types/:id', checkAuth, (request, response) => {
   const { id } = request.params;
   const { type_label } = request.body;
 
@@ -188,7 +188,7 @@ app.put('/api/v1/types/:id', (request, response) => {
 
 //DELETE Endpoints
   //DELETE by pokemon region id
-app.delete('/api/v1/pokemon/:region_id', (request, response) => {
+app.delete('/api/v1/pokemon/:region_id', checkAuth, (request, response) => {
   const { region_id } = request.params;
 
   database('pokemon').where({ region_id }).del()
