@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
+const jwt = require('jsonwebtoken');
 
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
@@ -17,6 +18,42 @@ app.locals.title = 'Poke150 API';
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on ${app.get('port')}.`);
 });
+
+
+//JWT Authorization
+const checkAuth = (request, response, next) => {
+  const token = request.body.token;
+
+  if(!token) {
+    response.status(403).json({ error: 'You must be authorized to hit this endpoint' })
+  }
+
+  jwt.verify(token, app.get('secretKey'), (err, decoded) => {
+    if (err) {
+      response.status(403).json({ error: 'Invalid token' });
+    }
+
+    if (!decoded.admin) {
+      response.status(403).json({ error: 'You are not authorized as admin to this endpoint' })
+    }
+      next();
+  })
+}
+
+const checkToken = (request, response, next) => {
+  const token = request.body.token;
+
+  if (!token) {
+    response.status(403).json({ error: 'You must be authorized to hit this endpoint' });
+  }
+
+  jwt.verify(token, app.get('secretKey'), (err, decoded) => {
+    if (err) {
+      return response.status(403).json({ error: 'Invalid token' });
+    }
+      next();
+  })
+}
 
 
 //GET Endpoints
