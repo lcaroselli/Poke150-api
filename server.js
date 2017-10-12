@@ -28,8 +28,8 @@ const checkAuth = (request, response, next) => {
     response.status(403).json({ error: 'You must be authorized to hit this endpoint' })
   }
 
-  jwt.verify(token, app.get('secretKey'), (err, decoded) => {
-    if (err) {
+  jwt.verify(token, app.get('secretKey'), (error, decoded) => {
+    if (error) {
       response.status(403).json({ error: 'Invalid token' });
     }
 
@@ -47,8 +47,8 @@ const checkToken = (request, response, next) => {
     response.status(403).json({ error: 'You must be authorized to hit this endpoint' });
   }
 
-  jwt.verify(token, app.get('secretKey'), (err, decoded) => {
-    if (err) {
+  jwt.verify(token, app.get('secretKey'), (error, decoded) => {
+    if (error) {
       return response.status(403).json({ error: 'Invalid token' });
     }
       next();
@@ -133,20 +133,23 @@ app.post('/api/v1/types', (request, response) => {
 });
 
   //POST new pokemon
-// app.post('/api/v1/types', (request, response) => {
-//   const { type_label } = request.body;
-//
-//   if(!type_label) {
-//     return response.status(422).json({ error: 'Missing required property: type label' })
-//   }
-//
-//   database('types').insert({ type_label }, '*')
+app.post('/api/v1/pokemon', (request, response) => {
+  const newPokemon = request.body;
 
-//   .then(type => response.status(201).json(type))
+  for (let pokeParameters of
+    [ 'region_id', 'name', 'attack_power', 'defense_power', 'hp', 'power_total', 'type_id', 'primary_type' ]) {
 
-//   .catch(error => response.status(500).json({ error }))
-// });
+      if (!newPokemon[pokeParameters]) {
+        return response.status(422).send({ error: `Expected parameters: { region_id: <String>, name: <String>, attack_power: <String>, defense_power: <String>, hp: <String>, power_total: <String>, type_id: <Integer>, primary_type: <String> }. You're missing a ${requiredParameter}.` });
+      }
+  }
 
+  database('pokemon').insert(newPokemon, '*')
+
+  .then(pokemon => response.status(201).json(pokemon))
+
+  .catch(error => response.status(500).json({ error }))
+});
 
 
 //PUT/PATCH Endpoints
@@ -169,20 +172,43 @@ app.delete('/api/v1/pokemon/:region_id', (request, response) => {
   .catch( error => response.status(500).json({ error }) );
 });
 
+
+
+  //DELETE by pokemon name
+// app.delete('/api/v1/pokemon/:name', (request, response) => {
+//   console.log(request.params)
+//
+//   const { name } = request.params;
+//
+//   console.log(name)
+//
+//   database('pokemon').where({ name }).del()
+//
+//   .then(response => {
+//     if(!response) {
+//       response.status(404).json({ error: 'Pokemon matching name not found' })
+//     }
+//     response.sendStatus(204)
+//   })
+//   .catch( error => response.status(500).json({ error }) );
+// });
+
+
+
   //DELETE types
 // app.delete('/api/v1/types/:type_label', (request, response) => {
-//   const { type_label } = request.params;
+//   const { type_label, id } = request.params;
 //
+//   database('pokemon').where({ type_id: id }).del()
 //   database('types').where({ type_label }).del()
 //
 //   .then(response => {
 //     if(!response) {
-//       response.status(404).json({ error: 'Type matching label not found' })
+//       response.status(404).json({ error: 'Not...' })
 //     }
 //     response.sendStatus(204)
-//    })
+//   })
+// })
 
-//   .catch( error => response.status(500).json({ error }) );
-// });
 
 module.exports = app;
