@@ -83,7 +83,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
-        response.body.length.should.equal(151);
+        response.body.length.should.equal(149);
         response.body[0].should.have.property('name');
         response.body[0].name.should.equal('Blastoise');
         done();
@@ -241,6 +241,85 @@ describe('API Routes', () => {
       .end((error, response) => {
         response.should.have.status(422);
         done();
+      });
+    });
+  });
+
+
+  describe('PATCH /api/v1/pokemon/:region_id', () => {
+    it('should be able to update values of a pokemon given the region ID', (done) => {
+      chai.request(server)
+      .patch('/api/v1/pokemon/150')
+      .send({
+        token,
+        name:'Staticmon'
+      })
+      .end((error, response) => {
+        response.should.have.status(200);
+        chai.request(server)
+        .get('/api/v1/pokemon/150')
+        .end((error, response) => {
+        response.body.should.be.a('array');
+        done();
+      });
+    });
+  });
+});
+
+  describe('PUT /api/v1/types/:id', () => {
+    it('should be able to update a type given the ID', (done) => {
+      chai.request(server)
+      .patch('/api/v1/types/71')
+      .send({
+        token,
+        type_label: 'unicorns'
+      })
+      .end((error, response) => {
+        chai.request(server)
+        .get('/api/v1/types/71')
+        .end((error, response) => {
+        done();
+        });
+      });
+    });
+  });
+
+  describe('DELETE /api/v1/pokemon/:region_id', () => {
+    it('should delete a pokemon with a matching region ID', (done) => {
+      chai.request(server)
+      .delete('/api/v1/pokemon/066')
+      .send({
+        token
+      })
+      .end((error, response) => {
+        response.body.should.be.a('object');
+        chai.request(server)
+        .get('/api/v1/pokemon')
+        .end( (error, response) => {
+        response.should.have.status(200);
+        response.body.should.be.a('array');
+        done();
+        });
+      });
+    });
+  });
+
+  describe('DELETE /api/v1/pokemon/id/:id', () => {
+    it('should delete a pokemon with a matching ID', (done) => {
+      chai.request(server)
+      .delete('/api/v1/pokemon/id/504')
+      .send({
+        token
+      })
+      .end((error, response) => {
+        response.body.should.be.a('object');
+        chai.request(server)
+        .get('/api/v1/pokemon')
+        .end( (error, response) => {
+        response.should.have.status(200);
+        response.body.should.be.a('array');
+        done();
+        });
       });
     });
   });
