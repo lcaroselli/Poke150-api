@@ -7,6 +7,8 @@ const environment = 'test';
 const configuration = require('../knexfile')[environment];
 const database = require('knex')(configuration);
 
+const secretKey = process.env.secretKey;
+
 chai.use(chaiHttp);
 
 describe('Client Routes', () => {
@@ -142,4 +144,35 @@ describe('API Routes', () => {
       });
     });
   });
+
+  describe('POST /api/v1/authenticate', () => {
+    it('should generate a JWT', (done) => {
+      chai.request(server)
+        .post('/api/v1/authenticate')
+        .send({
+          app: 'LauraApp',
+          email: 'laura@turing.io'
+        })
+        .end((error, response) => {
+          response.should.have.status(200);
+          response.should.be.json;
+          response.body.should.be.a('object');
+          response.body.should.have.property('token');
+          done();
+        });
+    });
+
+    it('should not generate token if missing required params', (done) => {
+      chai.request(server)
+        .post('/api/v1/authenticate')
+        .send({
+          name: 'Iris'
+        })
+        .end((error, response) => {
+          response.should.have.status(422);
+          done();
+        });
+    });
+  });
+
 });
