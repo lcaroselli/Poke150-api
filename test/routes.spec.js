@@ -58,9 +58,9 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
-        response.body.length.should.equal(14);
+        response.body.length.should.equal(15);
         response.body[0].should.have.property('type_label');
-        response.body[0].type_label.should.equal('fighting');
+        response.body[0].type_label.should.equal('sparkling');
         done();
       });
     });
@@ -181,38 +181,67 @@ describe('API Routes', () => {
   });
 
 
-  // describe('POST /api/v1/types', () => {
-  //   it('should POST a new type to the database', (done) => {
-  //     chai.request(server)
-  //     .post('/api/v1/types')
-  //     .set('Authorization', token)
-  //     .send({
-  //       id: 203,
-  //       type_label: 'sparkling'
-  //     })
-  //
-  //     .end((error, response) => {
-  //       response.should.have.status(201);
-  //       response.body.should.be.a('array');
-  //       response.body.length.should.equal(1);
-  //       response.body[0].should.have.property('type_label');
-  //       response.body[0].type.should.equal('sparkling');
-  //       done();
-  //     });
-  //   });
-  //
-  //
-  //   it('should not POST a type with missing parameters', (done) => {
-  //     chai.request(server)
-  //     .post('/api/v1/types')
-  //     .set('Authorization', token)
-  //     .send({
-  //       id: 207
-  //     })
-  //     .end((error, response) => {
-  //       response.should.have.status(422);
-  //       done();
-  //     });
-  //   });
-  // });
+  describe('POST /api/v1/types', () => {
+    it('should POST a new type to the database', (done) => {
+      chai.request(server)
+      .post('/api/v1/types')
+      .send({
+        token,
+        type_label: 'sparkling'
+      })
+      .end((error, response) => {
+        response.body.should.be.a('object');
+        done();
+      });
+    });
+
+
+    it('should not POST a type with missing parameters', (done) => {
+      chai.request(server)
+      .post('/api/v1/types')
+      .send({
+        token
+      })
+      .end((error, response) => {
+        response.should.have.status(422);
+        done();
+      });
+    });
+  });
+
+  describe('POST /api/v1/pokemon', () => {
+    it('should POST a new pokemon to the database', (done) => {
+      chai.request(server)
+      .post('/api/v1/pokemon')
+      .send({
+        token,
+        region_id: '201',
+        name: 'Lauramonn',
+        attack_power: '300000',
+        defense_power: '3',
+        hp: '2',
+        power_total: '3000000000',
+        type_id: 71,
+        primary_type: 'ice'
+      })
+      .end((error, response) => {
+        response.body.should.be.a('object');
+        done();
+      });
+    });
+
+
+    it('should not POST a type with missing parameters', (done) => {
+      chai.request(server)
+      .post('/api/v1/pokemon')
+      .send({
+        token,
+        region_id: '201'
+      })
+      .end((error, response) => {
+        response.should.have.status(422);
+        done();
+      });
+    });
+  });
 });
