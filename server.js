@@ -134,9 +134,9 @@ app.get('/api/v1/types/:id', (request, response) => {
 //POST Endpoints
   //POST for authentication
 app.post('/api/v1/authenticate', (request, response) => {
-  const { email, appName } = request.body;
+  const { email, app } = request.body;
 
-  if(!email || !appName) {
+  if(!email || !app) {
     return response.status(422).json({ error: 'Cannot authenticate: Email and App name are required' })
   }
 
@@ -146,11 +146,13 @@ app.post('/api/v1/authenticate', (request, response) => {
     Object.assign(request.body, { admin: false })
   }
 
-  let jwtToken = jwt.sign(request.body, app.get('secretKey'), { expiresIn: '48h' })
-
-  return response.status(201).json(jwtToken)
-
-  .catch(error => response.status(500).json({ error }))
+	jwt.sign(request.body, secretKey, { expiresIn: '48h' }, (error, token) => {
+		if(token) {
+      response.status(200).json({ token })
+    } else {
+      response.status(404).json({ error })
+    }
+	})
 });
 
   //POST new type
