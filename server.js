@@ -65,9 +65,17 @@ const checkToken = (request, response, next) => {
 //GET Endpoints
   //GET all pokemon
 app.get('/api/v1/pokemon', (request, response) => {
-  database('pokemon').select()
+  let { name } = request.query;
 
-  //query params - express how to access query params
+  const checkQuery = () => {
+    if (name) {
+      return database('pokemon').where('name', name).select()
+    } else {
+      return database('pokemon').select()
+    }
+  };
+
+  checkQuery()
 
   .then(pokemon => {
     if (!pokemon.length) {
@@ -81,7 +89,17 @@ app.get('/api/v1/pokemon', (request, response) => {
 
   //GET all types
 app.get('/api/v1/types', (request, response) => {
-  database('types').select()
+  let { type_label } = request.query;
+
+  const checkQuery = () => {
+    if (type_label) {
+      return database('types').where('type_label', type_label).select()
+    } else {
+      return database('types').select()
+    }
+  };
+
+  checkQuery()
 
   .then(types => {
     if (!types.length) {
