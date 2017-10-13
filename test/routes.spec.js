@@ -7,8 +7,6 @@ const environment = 'test';
 const configuration = require('../knexfile')[environment];
 const database = require('knex')(configuration);
 
-const secretKey = process.env.secretKey;
-
 chai.use(chaiHttp);
 
 describe('Client Routes', () => {
@@ -35,9 +33,16 @@ describe('Client Routes', () => {
 
 
 describe('API Routes', () => {
+  let token;
+
   before((done) => {
     database.migrate.latest()
       .then(() => done())
+
+    chai.request(server)
+      .post('/api/v1/authenticate')
+      .send({ app: 'My App', email: 'Laura@turing.io' })
+      .end((error, response) => token = JSON.parse(response.text).token);
   });
 
   beforeEach((done) => {
