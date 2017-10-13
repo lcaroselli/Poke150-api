@@ -10,10 +10,14 @@
     <header>Poke150-API Authorization Form</header>
     <section>
       <form action="index.html" method="post">
-        <input type="email" name="email" placeholder="Enter Email" value="">
-        <input type="text" name="app" placeholder="Enter App Name" value="">
-        <button type="button" name="button">Submit</button>
+        <input id="email-box" type="email" name="email" placeholder="Enter Email" value="">
+        <input id="app-box" type="text" name="app" placeholder="Enter App Name" value="">
+        <button id="submit" type="button" name="button">Submit</button>
       </form>
+    </section>
+    <section>
+      <h1>Generated Token:</h1>
+      <h3 id="token-box"></h3>
     </section>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script type='text/javascript' src='./js/scripts.js'></script>
