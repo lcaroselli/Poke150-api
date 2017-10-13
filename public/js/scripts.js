@@ -10,7 +10,11 @@ const postAuthorizationInfo = () => {
     })
     .then(response => response.json())
     .then(response => showToken(response.token))
-    .catch(error => console.log('No token generated'))
+    .catch(error => showToken(error))
+  }
+
+  if(!email || !app) {
+    alert('Please enter BOTH an email and app name')
   }
 }
 
