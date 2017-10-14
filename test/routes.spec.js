@@ -58,7 +58,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
-        response.body.length.should.equal(14);
+        response.body.length.should.equal(16);
         response.body[0].should.have.property('type_label');
         response.body[0].type_label.should.equal('sparkling');
         done();
@@ -83,7 +83,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
-        response.body.length.should.equal(151);
+        response.body.length.should.equal(148);
         response.body[0].should.have.property('name');
         response.body[0].name.should.equal('Blastoise');
         done();
@@ -190,7 +190,7 @@ describe('API Routes', () => {
         type_label: 'sparkling'
       })
       .end((error, response) => {
-        response.body.should.be.a('array');
+        response.body.should.be.a('object');
         done();
       });
     });
@@ -259,7 +259,7 @@ describe('API Routes', () => {
         chai.request(server)
         .get('/api/v1/pokemon/150')
         .end((error, response) => {
-        response.body.should.be.a('array');
+        response.body.should.be.a('object');
         done();
       });
     });
