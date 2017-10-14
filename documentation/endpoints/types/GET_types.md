@@ -38,7 +38,38 @@ https://poke150-api.herokuapp.com/api/v1/types/
 
 #### Return shortened for example purpose
 ```json
-
+[
+    {
+        "id": 73,
+        "type_label": "sparkling",
+        "created_at": "2017-10-13T17:28:51.524Z",
+        "updated_at": "2017-10-13T17:28:51.524Z"
+    },
+    {
+        "id": 67,
+        "type_label": "fighting",
+        "created_at": "2017-10-13T07:20:58.919Z",
+        "updated_at": "2017-10-13T07:20:58.919Z"
+    },
+    {
+        "id": 65,
+        "type_label": "ground",
+        "created_at": "2017-10-13T07:20:58.908Z",
+        "updated_at": "2017-10-13T07:20:58.908Z"
+    },
+    {
+        "id": 69,
+        "type_label": "rock",
+        "created_at": "2017-10-13T07:20:58.921Z",
+        "updated_at": "2017-10-13T07:20:58.921Z"
+    },
+    {
+        "id": 63,
+        "type_label": "normal",
+        "created_at": "2017-10-13T07:20:58.900Z",
+        "updated_at": "2017-10-13T07:20:58.900Z"
+    }
+]
 ```
 ---
 #### Request
@@ -46,7 +77,14 @@ https://poke150-api.herokuapp.com/api/v1/types/
 https://poke150-api.herokuapp.com/api/v1/types?type_label=grass
 ```
 
-#### Return shortened for example purpose
+#### Return
 ```json
-
+[
+    {
+        "id": 60,
+        "type_label": "grass",
+        "created_at": "2017-10-13T07:20:58.885Z",
+        "updated_at": "2017-10-13T07:20:58.885Z"
+    }
+]
 ```

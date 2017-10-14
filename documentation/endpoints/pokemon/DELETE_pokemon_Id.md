@@ -28,5 +28,5 @@ https://poke150-api.herokuapp.com/api/v1/pokemon/id/71
 
 #### Return
 ```json
-
+{ "":"" }
 ```

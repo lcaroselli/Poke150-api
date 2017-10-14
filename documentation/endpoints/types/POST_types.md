@@ -54,5 +54,12 @@ https://poke150-api.herokuapp.com/api/v1/types/
 `status: 201`
 
 ```json
-
+[
+    {
+        "id": 111,
+        "type_label": "Unicorns",
+        "created_at": "2017-10-14T00:07:04.565Z",
+        "updated_at": "2017-10-14T00:07:04.565Z"
+    }
+]
 ```

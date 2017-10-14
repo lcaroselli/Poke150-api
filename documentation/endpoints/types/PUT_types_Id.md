@@ -54,5 +54,12 @@ https://poke150-api.herokuapp.com/api/v1/types/71
 `status: 200`
 
 ```json
-
+[
+    {
+        "id": 71,
+        "type_label": "icey",
+        "created_at": "2017-10-13T07:20:58.924Z",
+        "updated_at": "2017-10-13T07:20:58.924Z"
+    }
+]
 ```

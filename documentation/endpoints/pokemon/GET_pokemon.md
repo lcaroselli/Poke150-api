@@ -45,7 +45,47 @@ https://poke150-api.herokuapp.com/api/v1/pokemon/
 
 #### Return shortened for example purpose
 ```json
-
+[
+    {
+        "id": 463,
+        "region_id": "009",
+        "name": "Blastoise",
+        "attack_power": "83",
+        "defense_power": "100",
+        "hp": "79",
+        "power_total": "530",
+        "type_id": 59,
+        "created_at": "2017-10-13T07:20:58.981Z",
+        "updated_at": "2017-10-13T07:20:58.981Z",
+        "primary_type": "water"
+    },
+    {
+        "id": 471,
+        "region_id": "017",
+        "name": "Pidgeotto",
+        "attack_power": "60",
+        "defense_power": "55",
+        "hp": "63",
+        "power_total": "349",
+        "type_id": 63,
+        "created_at": "2017-10-13T07:20:59.003Z",
+        "updated_at": "2017-10-13T07:20:59.003Z",
+        "primary_type": "normal"
+    },
+    {
+        "id": 480,
+        "region_id": "026",
+        "name": "Raichu",
+        "attack_power": "90",
+        "defense_power": "55",
+        "hp": "60",
+        "power_total": "475",
+        "type_id": 66,
+        "created_at": "2017-10-13T07:20:59.019Z",
+        "updated_at": "2017-10-13T07:20:59.019Z",
+        "primary_type": "electric"
+    }
+]
 ```
 ---
 #### Request
@@ -55,5 +95,19 @@ https://poke150-api.herokuapp.com/api/v1/pokemon?name=Blastoise
 
 #### Return shortened for example purpose
 ```json
-
+[
+    {
+        "id": 463,
+        "region_id": "009",
+        "name": "Blastoise",
+        "attack_power": "83",
+        "defense_power": "100",
+        "hp": "79",
+        "power_total": "530",
+        "type_id": 59,
+        "created_at": "2017-10-13T07:20:58.981Z",
+        "updated_at": "2017-10-13T07:20:58.981Z",
+        "primary_type": "water"
+    }
+]
 ```
