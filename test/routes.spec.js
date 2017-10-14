@@ -58,7 +58,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
-        response.body.length.should.equal(15);
+        response.body.length.should.equal(14);
         response.body[0].should.have.property('type_label');
         response.body[0].type_label.should.equal('sparkling');
         done();
@@ -83,7 +83,7 @@ describe('API Routes', () => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
-        response.body.length.should.equal(149);
+        response.body.length.should.equal(151);
         response.body[0].should.have.property('name');
         response.body[0].name.should.equal('Blastoise');
         done();
@@ -128,14 +128,14 @@ describe('API Routes', () => {
   describe('GET /api/v1/types/:id', () => {
     it('should retrieve a type by id', (done) => {
       chai.request(server)
-      .get('/api/v1/types/72')
+      .get('/api/v1/types/71')
       .end((error, response) => {
         response.should.have.status(200);
         response.should.be.json;
         response.body.should.be.a('array');
         response.body.length.should.equal(1);
         response.body[0].should.have.property('type_label');
-        response.body[0].type_label.should.equal('dragon');
+        response.body[0].type_label.should.equal('icey');
         done();
       });
     });
@@ -190,7 +190,7 @@ describe('API Routes', () => {
         type_label: 'sparkling'
       })
       .end((error, response) => {
-        response.body.should.be.a('object');
+        response.body.should.be.a('array');
         done();
       });
     });
